@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – ScriptReady</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1f2937;
+      background: #f9fafb;
+      padding: 0;
+    }
+    .hero {
+      background: #1a6b4a;
+      padding: 60px 24px 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .hero p {
+      color: #a8d5c2;
+      font-size: 15px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a6b4a;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #374151;
+      margin-bottom: 14px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    ul li {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #374151;
+      margin-bottom: 6px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e5e7eb;
+    }
+    .updated {
+      text-align: center;
+      font-size: 13px;
+      color: #9ca3af;
+      margin-top: 48px;
+    }
+    a { color: #1a6b4a; }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Privacy Policy</h1>
+  <p>ScriptReady — Your prescriptions, kept private.</p>
+</div>
+
+<div class="container">
+
+  <p style="margin-top: 8px;">
+    This Privacy Policy describes how ScriptReady ("we", "our", or "us") collects, uses, and protects your information when you use the ScriptReady mobile application ("App"). We take your privacy seriously — especially given the sensitive nature of prescription data.
+  </p>
+
+  <h2>1. Information We Collect</h2>
+  <div class="card">
+    <p><strong>Account Information</strong><br/>
+    When you create an account, we collect your email address and a hashed password via Firebase Authentication.</p>
+
+    <p><strong>Prescription Data</strong><br/>
+    When you add a script, we store the following in your private cloud account:</p>
+    <ul>
+      <li>Medication name and optional nickname</li>
+      <li>Prescriber name (optional)</li>
+      <li>Issue date, expiry date, and repeat count</li>
+      <li>The eScript URL (used to generate the QR code)</li>
+      <li>The person the script belongs to (e.g. Me, family member)</li>
+    </ul>
+
+    <p style="margin-bottom: 0;"><strong>Device Security Data</strong><br/>
+    Your 6-digit passcode is stored encrypted on your device using iOS Secure Enclave (via Expo SecureStore). It is never transmitted to our servers. Face ID is handled entirely by iOS — we never access biometric data.</p>
+  </div>
+
+  <h2>2. How We Use Your Information</h2>
+  <div class="card">
+    <ul>
+      <li>To store and sync your prescription data securely across sessions</li>
+      <li>To display your scripts and QR codes within the App</li>
+      <li>To authenticate you and protect access to your data</li>
+      <li>To allow you to manage repeats, expiry dates, and family member scripts</li>
+    </ul>
+    <p style="margin-bottom: 0;">We do not use your data for advertising, analytics profiling, or any purpose beyond operating the App.</p>
+  </div>
+
+  <h2>3. Data Storage and Security</h2>
+  <div class="card">
+    <p>Your prescription data is stored in Google Firebase Firestore, a secure cloud database. Access is restricted exclusively to your account — no other user or third party can read your data.</p>
+    <p>Firebase enforces server-side security rules that ensure only authenticated users can access their own data.</p>
+    <p style="margin-bottom: 0;">Your passcode is stored using iOS Secure Enclave on your device only and is never uploaded to any server.</p>
+  </div>
+
+  <h2>4. Data Sharing</h2>
+  <div class="card">
+    <p style="margin-bottom: 0;">We do not sell, rent, or share your personal information or prescription data with any third parties. The only third-party service we use is:</p>
+    <ul style="margin-top: 12px; margin-bottom: 0;">
+      <li><strong>Google Firebase</strong> — for authentication and secure data storage. Subject to <a href="https://firebase.google.com/support/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+    </ul>
+  </div>
+
+  <h2>5. eScript Links</h2>
+  <div class="card">
+    <p style="margin-bottom: 0;">When you paste an eScript SMS link, the App opens the eRx/eScript provider's page within the App to read medication details. We do not store or transmit the raw eScript page content — only the structured prescription data you confirm is saved. The eScript URL is stored solely to generate the QR code for pharmacy presentation.</p>
+  </div>
+
+  <h2>6. Your Rights and Choices</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Access:</strong> All your data is visible within the App at all times.</li>
+      <li><strong>Deletion:</strong> You can delete individual scripts at any time. You can delete your entire account and all associated data from Settings → Delete Account.</li>
+      <li><strong>Export:</strong> Contact us if you require a copy of your data.</li>
+    </ul>
+    <p style="margin-bottom: 0;">Deleting your account permanently removes all prescription data from our servers within 30 days.</p>
+  </div>
+
+  <h2>7. Children's Privacy</h2>
+  <div class="card">
+    <p style="margin-bottom: 0;">ScriptReady is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+  </div>
+
+  <h2>8. Changes to This Policy</h2>
+  <div class="card">
+    <p style="margin-bottom: 0;">We may update this Privacy Policy from time to time. We will notify you of significant changes via the App or by email. Continued use of the App after changes constitutes your acceptance of the updated policy.</p>
+  </div>
+
+  <h2>9. Contact Us</h2>
+  <div class="card">
+    <p style="margin-bottom: 0;">If you have any questions about this Privacy Policy or how we handle your data, please contact us at:<br/><br/>
+    <strong>ScriptReady</strong><br/>
+    <a href="mailto:privacy@scriptready.app">privacy@scriptready.app</a>
+    </p>
+  </div>
+
+  <p class="updated">Last updated: March 2026</p>
+
+</div>
+</body>
+</html>
